@@ -11,3 +11,7 @@
 .dark .section-header{
   @apply text-gray-400 tracking-widest text-xs mb-4 font-bold uppercase;
 }
+
+.stack-tag{
+  @apply bg-secondary-100 ml-2 dark:bg-gray-700 text-gray-700 dark:text-gray-200 text-base rounded px-2
+}
