@@ -1,11 +1,11 @@
 import Link from 'next/link';
 import {server} from '../../config/index';
+import Image from 'next/image'
 
 export async function getStaticPaths(context) {
   let res = await fetch(`${server}/projects`)
   res = await res.json()
   
-  console.log('RESS: ', res);
   const paths = res.projects.map(project => {
     return {
       params: {id: project.id.toString()}
@@ -34,8 +34,18 @@ export default function Post({res}) {
     <>
       <Link href='/projects'><a>Go back</a></Link>
       <br/>
-      <h3>Project id: {res.project.id}</h3>
-      <h3>Project name: {res.project.title}</h3>
+      <div className="w-full text-center">
+      {res.project.imageUrl 
+      ? <Image src={res.project.imageUrl} width="1000" height="600" objectFit="contain"></Image>
+      : null}
+      </div>
+      <div className="items-center flex content-between">
+        <h3 className="text-2xl">Project: <span className="font-bold">{res.project.title}</span></h3>
+        {res.project.stack.map(skill => (
+          <span className="stack-tag">{skill}</span>
+        ))}
+      </div>
+      <p>Description: {res.project.description}</p>
     </>
   )
 }

@@ -7,7 +7,7 @@ const Nav = (props) => {
   return (
     <div className="border-t-8 border-primary mb-14 text-text dark:text-gray-200">
     <nav className="container m-auto flex justify-between mt-6 px-6">
-      <div className="logo">Mario.</div>
+      <div className="logo text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-br from-primary to-orange-200">Mario.</div>
       <ul className="links flex md:space-x-4 items-center">
         <li>
           <Link href="/">
