@@ -32,20 +32,44 @@ export async function getStaticProps(context) {
 export default function Post({res}) {
   return (
     <>
-      <Link href='/projects'><a>Go back</a></Link>
+      <Link href='/projects'><a className="inline-flex group transition">
+      <svg className="w-4 mr-2 transform transition group-hover:-translate-x-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 19l-7-7 7-7m8 14l-7-7 7-7" />
+      </svg>
+        Go back</a></Link>
       <br/>
       <div className="w-full text-center">
       {res.project.imageUrl 
-      ? <Image src={res.project.imageUrl} width="1000" height="600" objectFit="contain"></Image>
+      ? <Image src={res.project.imageUrl} width="1000" height="500" objectFit="contain"></Image>
       : null}
       </div>
-      <div className="items-center flex content-between">
-        <h3 className="text-2xl">Project: <span className="font-bold">{res.project.title}</span></h3>
-        {res.project.stack.map(skill => (
-          <span className="stack-tag">{skill}</span>
-        ))}
+      <div className="items-center mt-2">
+        <div className="stack">
+          {res.project.stack.map((skill, i) => (
+            <span className="stack-tag stack-no-ml ml-0" key={i}>#{skill}</span>
+            ))}
+        </div>
+        {/* <div className="text-2xl">Project: <span className="font-bold">{res.project.title}</span></div> */}
+        <div className=" mt-2 project-info md:grid md:grid-cols-6 lg:grid-cols-12 gap-y-2 xl:gap-x-24">
+            <h3 className="proj-title">Project</h3>
+            <p className="proj-desc mb-2 md:mb-0">{res.project.title}</p>
+
+            <h3 className="proj-title">Description</h3>
+            <p className="proj-desc mb-2 md:mb-0">{res.project.description}</p>
+
+            <h3 className="proj-title">Summary</h3>
+            {res.project.summary
+            ? <p className="proj-desc">{res.project.summary}</p>
+            : null}
+        </div>
+        <div className="">
+          {res.project.repo
+          ? <a href={res.project.repo} target="_blank" className="underline">Code</a>
+          : null}
+          <br/>
+          <a href={res.project.website} target="_blank" className="underline">Live version</a>
+        </div>
       </div>
-      <p>Description: {res.project.description}</p>
     </>
   )
 }

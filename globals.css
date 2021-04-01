@@ -13,5 +13,15 @@
 }
 
 .stack-tag{
-  @apply bg-secondary-100 mr-2 lg:mr-0 lg:ml-2 dark:bg-gray-700 text-gray-700 dark:text-gray-200 text-sm rounded px-2 py-1;
+  @apply bg-secondary-100 mr-2 lg:mr-0 lg:ml-2 dark:bg-gray-700 text-gray-700 dark:text-gray-200 text-sm rounded px-2 py-1 cursor-pointer;
+}
+.stack-no-ml{
+  @apply lg:ml-0 mr-2;
+}
+
+.proj-title{
+  @apply lg:col-span-2 xl:col-span-1 font-bold;
+}
+.proj-desc{
+  @apply col-span-3 md:col-span-5 lg:col-span-10 xl:col-span-11;
 }
