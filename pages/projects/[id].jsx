@@ -44,7 +44,7 @@ export default function Post({res}) {
       : null}
       </div>
       <div className="items-center mt-2">
-        <div className="stack">
+        <div className="flex flex-wrap">
           {res.project.stack.map((skill, i) => (
             <span className="stack-tag stack-no-ml ml-0" key={i}>#{skill}</span>
             ))}
