@@ -13,5 +13,5 @@
 }
 
 .stack-tag{
-  @apply bg-secondary-100 ml-2 dark:bg-gray-700 text-gray-700 dark:text-gray-200 text-base rounded px-2
+  @apply bg-secondary-100 mr-2 lg:mr-0 lg:ml-2 dark:bg-gray-700 text-gray-700 dark:text-gray-200 text-sm rounded px-2 py-1;
 }

@@ -4,11 +4,13 @@ const Project = ({project, i}) => (
   <div className="flex">
     <span className="text-2xl mt-1">{i}</span>
     <div className="ml-3">
-      <div className="text-2xl font-semibold items-center flex content-between">
-        {project.title}
-        {project.stack.map(skill => (
-          <span className="stack-tag">{skill}</span>
-        ))}
+      <div className="text-2xl font-semibold lg:flex lg:justify-between lg:items-center">
+        <div>{project.title}</div>
+        <div className="stack mb-1">
+          {project.stack.map((skill, i) => (
+            <span className="stack-tag" key={i}>#{skill}</span>
+          ))}
+        </div>
         </div>
       <p>{project.description}</p>
       <div className="flex justify-between">
