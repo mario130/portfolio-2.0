@@ -2,7 +2,6 @@ import Link from 'next/link';
 import {server} from '../config/index';
 
 export default (props) => {
-  console.log(props);
 
   return(
 
@@ -24,21 +23,10 @@ export default (props) => {
 
       <div className="hidden md:block col-span-3">
         <p className="section-header mb-4">My latest project</p>
-        <p className="text-2xl font-bold">Portfolio website</p>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis distinctio, quod ipsam harum mollitia placeat libero sint amet aspernatur et in, cum maiores numquam tenetur soluta illum sit dolorum. Id.</p>
+        <Link href="/projects/1"><a className="text-2xl font-bold">Portfolio</a></Link>
+        <p>My second portfolio website, but this time with a library and Static Site Generation which I'm starting to get the hang of, had a lot of fun building it with dynamic routes in Next & I'll try to update it as often with new imporvements.</p>
       </div>
     </footer>
   </div>
   )
-}
-
-export async function getStaticProps(context) {
-  let projects = await fetch(`${server}/projects`)
-  projects = await projects.json()
-
-  return {
-    props: {
-      res: projects
-    }
-  }
 }
