@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default () => (
   <>
-    <p className="section-header">About me</p>
+    <p className="section-header mb-4">About me</p>
 
     <main className="text-2xl leading-normal text-center">
       <p className="flex justify-center gap-2">

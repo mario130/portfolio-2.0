@@ -4,12 +4,11 @@ import Project from '../../components/project';
 import { server } from '../../config/index';
 
 export default (props) => {
-  // useEffect
   
   return (
     <>
     <header className="">
-      <p className="section-header">Projects</p>
+      <p className="section-header mb-4">Projects</p>
       <p className="capitalize text-4xl font-bold -mt-4">My latest projects</p>
     </header>
 

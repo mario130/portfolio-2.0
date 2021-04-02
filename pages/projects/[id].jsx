@@ -33,7 +33,7 @@ export async function getStaticProps(context) {
 export default function Post({res}) {
   return (
     <>
-      <Link href='/projects'><a className="inline-flex group transition">
+      <Link href='/projects'><a className="section-header mb-4 inline-flex group transition">
       <svg className="w-4 mr-2 transform transition group-hover:-translate-x-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 19l-7-7 7-7m8 14l-7-7 7-7" />
       </svg>

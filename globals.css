@@ -5,11 +5,11 @@
 @tailwind utilities;
 
 .section-header{
-  @apply text-muted-text tracking-widest text-xs mb-4 font-bold uppercase;
+  @apply text-muted-text tracking-widest text-xs font-bold uppercase;
 }
 
 .dark .section-header{
-  @apply text-gray-400 tracking-widest text-xs mb-4 font-bold uppercase;
+  @apply text-gray-400 tracking-widest text-xs font-bold uppercase;
 }
 
 .stack-tag{

@@ -33,5 +33,16 @@ module.exports = {
       translate: ['group-hover']
     },
   },
-  plugins: [],
+  plugins: [
+    function ({addUtilities}) {
+      const extendUnderline = {
+          '.underline': {
+              'textDecoration': 'underline',
+              'text-decoration-color': '#f2930d',
+              'textDecorationThickness': '2px',
+          },
+      }
+      addUtilities(extendUnderline)
+  }
+  ],
 }

@@ -4,7 +4,7 @@ import Nav from "../components/nav";
 
 export default () => (
   <>
-    <p className="section-header">Introduction</p>
+    <p className="section-header mb-4">Introduction</p>
 
     <main className="text-2xl leading-normal">
       <p>

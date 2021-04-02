@@ -16,18 +16,17 @@ const Project = ({project, i}) => (
       <p>{project.description}</p>
       <div className="flex justify-between">
         <ul className="flex space-x-3">
-          <li><a className="hover:text-primary underline" href={project.website}>Website</a></li>
-          <li><a className="hover:text-primary underline" href={project.repo}>Code</a></li>
+          {project.website ? <li><a className="underline" href={project.website}>Website</a></li> : null}
+          {project.repo ? <li><a className="underline" href={project.repo}>Code</a></li> : null}
         </ul>
         <div className="flex items-center group">
-        <Link href={`/projects/${project.id}`}>
-          <a className="group-hover:text-primary transition-all">
-            Quick view 
-          </a>
-        </Link>
-        <svg className="w-4 ml-2 group-hover:text-primary transform group-hover:translate-x-1 transition-all" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+
+        <Link href={`/projects/${project.id}`}><a className="section-header inline-flex group transition-all">
+        Quick view
+        <svg className="w-4 ml-2 transform group-hover:translate-x-1 transition-all" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 5l7 7-7 7M5 5l7 7-7 7" />
         </svg>
+        </a></Link>
         </div>
       </div>
     </div>
