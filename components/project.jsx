@@ -14,7 +14,7 @@ const Project = ({project, i}) => (
         </div>
       </div>
       <p>{project.description}</p>
-      <div className="flex justify-between">
+      <div className="flex justify-between mt-2">
         <ul className="flex space-x-3">
           {project.website ? <li><a className="underline" href={project.website}>Website</a></li> : null}
           {project.repo ? <li><a className="underline" href={project.repo}>Code</a></li> : null}
