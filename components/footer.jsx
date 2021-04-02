@@ -1,6 +1,11 @@
 import Link from 'next/link';
+import {server} from '../config/index';
 
-const Footer = () => (
+export default (props) => {
+  console.log(props);
+
+  return(
+
   <div className="bg-muted-bg py-16 text-text  dark:bg-dark-bgSecondary dark:text-gray-200">
     <footer className="px-6 container mx-auto grid grid-cols-2 md:grid-cols-5">
       <ul className="leading-8">
@@ -24,6 +29,16 @@ const Footer = () => (
       </div>
     </footer>
   </div>
-)
+  )
+}
 
-export default Footer
+export async function getStaticProps(context) {
+  let projects = await fetch(`${server}/projects`)
+  projects = await projects.json()
+
+  return {
+    props: {
+      res: projects
+    }
+  }
+}

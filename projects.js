@@ -2,7 +2,7 @@ export const projects = [
   {
     id: 1,
     title: "Portfolio",
-    description: "My second portfolio website, but this time with a library and SSG which I'm starting to get the hang of.",
+    description: "My second portfolio website, but this time with a library and Static Site Generation which I'm starting to get the hang of, had a lot of fun building it with dynamic routes in Next & I'll try to update it as often with new imporvements. ",
     stack: ["React", "Next", "Tailwind"],
     website: "https://portfolio-mario130.vercel.app/",
     repo: "",
