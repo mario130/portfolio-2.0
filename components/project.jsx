@@ -1,17 +1,18 @@
 import Link from 'next/link';
+import Tag from './tag';
 
 const Project = ({project, i}) => (
-  <div className="flex">
-    <span className="text-2xl mt-1">{i}</span>
+  <div className="flex mb-1">
+    <span className="text-2xl mt-px">{i}</span>
     <div className="ml-3">
       <div className="text-2xl font-semibold lg:flex lg:justify-between lg:items-center">
-        <div>{project.title}</div>
+        <div className="mb-2">{project.title}</div>
         <div className="flex flex-wrap mb-1">
           {project.stack.map((skill, i) => (
-            <span className="stack-tag" key={i}>#{skill}</span>
+            <Tag i={i} skill={skill} />
           ))}
         </div>
-        </div>
+      </div>
       <p>{project.description}</p>
       <div className="flex justify-between">
         <ul className="flex space-x-3">

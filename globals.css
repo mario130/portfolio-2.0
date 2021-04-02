@@ -13,10 +13,10 @@
 }
 
 .stack-tag{
-  @apply bg-secondary-100 mr-2 lg:mr-0 mb-1 lg:ml-2 dark:bg-gray-700 text-gray-700 dark:text-gray-200 text-sm rounded px-1 py-0 cursor-pointer font-light;
+  @apply bg-secondary-100 mr-2 lg:mr-0 mb-2 lg:ml-2 dark:bg-gray-700 text-gray-700 dark:text-gray-200 text-sm rounded px-1 py-0 cursor-pointer font-light;
 }
 .stack-no-ml{
-  @apply lg:ml-0 mr-2;
+  @apply ml-0 mr-2;
 }
 
 .proj-title{

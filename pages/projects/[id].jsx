@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import {server} from '../../config/index';
 import Image from 'next/image'
+import Tag from '../../components/tag';
 
 export async function getStaticPaths(context) {
   let res = await fetch(`${server}/projects`)
@@ -45,8 +46,8 @@ export default function Post({res}) {
       </div>
       <div className="items-center mt-2">
         <div className="flex flex-wrap">
-          {res.project.stack.map((skill, i) => (
-            <span className="stack-tag stack-no-ml ml-0" key={i}>#{skill}</span>
+          {res.project.stack.map((skill, i ) => (
+            <Tag className="stack-no-ml ml-0" i={i} skill={skill} noMarginLeft={true} />
             ))}
         </div>
         {/* <div className="text-2xl">Project: <span className="font-bold">{res.project.title}</span></div> */}
