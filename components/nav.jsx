@@ -1,4 +1,5 @@
-import Link from 'next/link';
+import LinkDef from 'next/link';
+import Link from './link';
 
 
 const Nav = (props) => {
@@ -7,24 +8,24 @@ const Nav = (props) => {
   return (
     <div className="border-t-8 border-primary mb-14 text-text dark:text-gray-200">
     <nav className="container m-auto flex justify-between mt-6 px-6">
-      <Link href="/">
+      <LinkDef href="/">
         <a className="logo text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-br from-primary to-orange-200">Mario.</a>
-      </Link>
+      </LinkDef>
       <ul className="links flex md:space-x-4 items-center">
         <li>
           <Link href="/">
             {/* <a className="border-b-2 border-primary p-2">Home</a> */}
-            <a className="border-b-2 border-none p-2">Home</a>
+            <a className="border-b-2 border-transparent p-2">Home</a>
           </Link>
         </li>
         <li>
           <Link href="/projects">
-            <a className="border-b-2 border-none p-2">Projects</a>
+            <a className="border-b-2 border-transparent p-2">Projects</a>
           </Link>
         </li>
         <li>
           <Link href="/about">
-            <a className="border-b-2 border-none p-2">About</a>
+            <a className="border-b-2 border-transparent p-2">About</a>
           </Link>
         </li>
         <li className="ml-2 md:ml-0">

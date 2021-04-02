@@ -25,3 +25,7 @@
 .proj-desc{
   @apply col-span-3 md:col-span-5 lg:col-span-10 xl:col-span-11 mb-2 md:mb-0;
 }
+
+.active{
+  @apply border-b-2 border-primary;
+}
