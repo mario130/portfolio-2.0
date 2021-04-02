@@ -7,7 +7,7 @@ const Project = ({project, i}) => (
     <div className="ml-3">
       <div className="text-2xl font-semibold lg:flex lg:justify-between lg:items-center">
         <Link href={`/projects/${project.id}`}><a className="mb-2">{project.title}</a></Link>
-        <div className="flex flex-wrap mb-1">
+        <div className="flex flex-wrap mb-1 mt-2 lg:mt-0">
           {project.stack.map((skill, i) => (
             <Tag i={i} skill={skill} />
           ))}

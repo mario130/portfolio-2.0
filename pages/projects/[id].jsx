@@ -53,15 +53,13 @@ export default function Post({res}) {
         {/* <div className="text-2xl">Project: <span className="font-bold">{res.project.title}</span></div> */}
         <div className=" mt-2 project-info md:grid md:grid-cols-6 lg:grid-cols-12 gap-y-2 xl:gap-x-24">
             <h3 className="proj-title">Project</h3>
-            <p className="proj-desc mb-2 md:mb-0">{res.project.title}</p>
+            <p className="proj-desc">{res.project.title}</p>
 
             <h3 className="proj-title">Description</h3>
-            <p className="proj-desc mb-2 md:mb-0">{res.project.description}</p>
+            <p className="proj-desc">{res.project.description}</p>
 
             <h3 className="proj-title">Summary</h3>
-            {res.project.summary
-            ? <p className="proj-desc">{res.project.summary}</p>
-            : null}
+            <p className="proj-desc">{res.project.summary}</p>
         </div>
         <div className="">
           {res.project.repo
