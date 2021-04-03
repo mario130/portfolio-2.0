@@ -40,7 +40,7 @@ export default (props) => {
       <div className="hidden md:block col-span-3">
         <p className="section-header mb-4">My latest project</p>
         <Link href="/projects/1"><a className="text-2xl font-bold">Portfolio</a></Link>
-        <p>My second portfolio website, but this time with a library and Static Site Generation which I'm starting to get the hang of, had a lot of fun building it with dynamic routes in Next & I'll try to update it as often with new imporvements.</p>
+        <p>My second portfolio website, but this time with a library and Static Site Generation which I'm starting to get the hang of. Built using mobile first approach, had a lot of fun building it with dynamic routes in Next & I'll try to update it as often with new imporvements.</p>
       </div>
     </footer>
   </div>

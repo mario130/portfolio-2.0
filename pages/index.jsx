@@ -1,9 +1,12 @@
 import Link from "next/link";
-import Head from "../components/head";
+import Head from "next/head";
 import Nav from "../components/nav";
 
 export default () => (
   <>
+    <Head>
+      <title>Home - Mario Yonan</title>
+    </Head>
     <p className="section-header mb-4">Introduction</p>
 
     <main className="text-2xl leading-normal">

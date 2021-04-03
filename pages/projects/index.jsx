@@ -2,11 +2,15 @@ import Link from "next/link";
 import { useEffect } from "react";
 import Project from '../../components/project';
 import { server } from '../../config/index';
+import Head from "next/head";
 
 export default (props) => {
   
   return (
     <>
+    <Head>
+      <title>Projects - Mario Yonan</title>
+    </Head>
     <header className="">
       <p className="section-header mb-4">Projects</p>
       <p className="capitalize text-4xl font-bold -mt-4">My latest projects</p>

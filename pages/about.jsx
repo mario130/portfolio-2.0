@@ -1,7 +1,11 @@
 import Link from "next/link";
+import Head from "next/head";
 
 export default () => (
   <>
+    <Head>
+      <title>About - Mario Yonan</title>
+    </Head>
     <p className="section-header mb-4">About me</p>
 
     <main className="text-2xl leading-normal text-center">

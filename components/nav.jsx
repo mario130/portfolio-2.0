@@ -1,11 +1,17 @@
 import LinkDef from 'next/link';
 import Link from './link';
-
+import Head from './head';
 
 const Nav = (props) => {
   
   
   return (
+    <>
+    <Head>
+      <link rel="icon" type="image/png" sizes="16x16" href="/static/favicon-16x16.png"/>
+      <link rel="icon" type="image/png" sizes="32x32" href="/static/favicon-32x32.png" />
+      <link rel="shortcut icon" href="/static/favicon.ico" />
+    </Head>
     <div className="border-t-8 border-primary mb-14 text-text dark:text-gray-200">
     <nav className="container m-auto flex justify-between mt-6 px-6">
       <LinkDef href="/">
@@ -42,6 +48,7 @@ const Nav = (props) => {
       </ul>
     </nav>
   </div>
+  </>
   )
 };
 
