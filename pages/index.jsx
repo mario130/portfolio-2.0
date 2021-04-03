@@ -9,7 +9,18 @@ export default () => (
     <main className="text-2xl leading-normal">
       <p>
         <b>My name is Mario Yonan, and I make websites. </b>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. In cum harum, nihil, libero est quia eius magnam culpa quas qui eveniet beatae aperiam possimus, natus cumque! Alias doloribus cupiditate, ducimus repellat animi officiis nihil quas corporis error aut. Repellat libero hic voluptas veniam dicta placeat culpa, aliquid error iure quod a eius. Quae cumque inventore cupiditate incidunt nemo amet perspiciatis!
+        Being a self-taught developer, I've learned many skills that I use on daily basisand.
+        I also have a lot of 
+        <Link href="/projects"><a className="bg-primary bg-opacity-20 px-1 mx-2 rounded">personal projects</a></Link>
+        to demonstrate that knowledge.
+
+        Working hard is  very much a part of my personal identity, and I like exploring new technologies and practicing on them with projects in my free time
+        
+        </p>
+        <p>
+        — Currently studying Fullstack path at
+        <Link href="http://iti.gov.eg/"><a className="bg-primary bg-opacity-20 px-1 mx-2 rounded">ITI</a></Link>
+        in a 3 months internship in which I'm studying MEAN/MERN technologies
       </p>
     </main>
   </>
