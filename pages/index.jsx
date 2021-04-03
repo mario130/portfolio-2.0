@@ -9,12 +9,12 @@ export default () => (
     <main className="text-2xl leading-normal">
       <p>
         <b>My name is Mario Yonan, and I make websites. </b>
-        Being a self-taught developer, I've learned many skills that I use on daily basisand.
+        Being a self-taught developer, I've learned many skills that I use on daily basis.
         I also have a lot of 
         <Link href="/projects"><a className="bg-primary bg-opacity-20 px-1 mx-2 rounded">personal projects</a></Link>
         to demonstrate that knowledge.
 
-        Working hard is  very much a part of my personal identity, and I like exploring new technologies and practicing on them with projects in my free time
+        I like exploring new technologies and practicing on them with projects in my free time
         
         </p>
         <p>
