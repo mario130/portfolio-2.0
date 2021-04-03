@@ -1,7 +1,8 @@
 import Link from "next/link";
 import Project from '../../components/project';
 import { server } from '../../config/index';
-import { useRouter } from 'next/router'
+import { useRouter } from 'next/router';
+import Head from 'next/head';
 
 
 export async function getStaticPaths(context) {
@@ -45,6 +46,9 @@ export default ({ res }) => {
   
   return (
     <>
+    <Head>
+      <title>#{tag} - Mario Yonan</title>
+    </Head>
     <header className="">
       <p className="section-header mb-4">Projects</p>
       <p className="capitalize text-4xl font-bold -mt-4">Projects where I used <span className="text-primary">{tag}</span></p>
