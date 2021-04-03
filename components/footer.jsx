@@ -9,15 +9,31 @@ export default (props) => {
     <footer className="px-6 container mx-auto grid grid-cols-2 md:grid-cols-5">
       <ul className="leading-8">
         <li className="section-header mb-4">site</li>
-        <li>Home</li>
-        <li>Projects</li>
-        <li>Blog</li>
+        <li>
+          <Link href="/">
+            <a>Home</a>
+          </Link>
+        </li>
+        <li>
+          <Link href="/projects">
+            <a>Projects</a>
+          </Link>
+        </li>
+        <li>
+          <Link href="/about">
+            <a>About</a>
+          </Link>
+        </li>
       </ul>
 
       <ul className="leading-8">
         <li className="section-header mb-4">Links</li>
-        <li>Github</li>
-        <li>LinkedIn</li>
+        <li>
+          <Link href="https://github.com/mario130"><a>Github</a></Link>
+        </li>
+        <li>
+          <Link href="https://linkedin.com/in/mario130/"><a>LinkedIn</a></Link>
+        </li>
         <li>Resume</li>
       </ul>
 

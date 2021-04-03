@@ -5,7 +5,7 @@ export default () => (
     <p className="section-header mb-4">About me</p>
 
     <main className="text-2xl leading-normal text-center">
-      <p className="flex justify-center gap-2">
+      <p className="flex justify-center gap-2 py-48">
         <b>Page under construction..</b>
         <svg className="w-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path d="M9 17a2 2 0 11-4 0 2 2 0 014 0zM19 17a2 2 0 11-4 0 2 2 0 014 0z" />
