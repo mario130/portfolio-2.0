@@ -29,12 +29,17 @@ export default (props) => {
       <ul className="leading-8">
         <li className="section-header mb-4">Links</li>
         <li>
-          <Link href="https://github.com/mario130"><a>Github</a></Link>
+          <span className="line-through select-none">Github</span>
         </li>
         <li>
-          <Link href="https://linkedin.com/in/mario130/"><a>LinkedIn</a></Link>
+          <span className="line-through select-none">LinkedIn</span>
         </li>
-        <li>Resume</li>
+        <li>
+          <span className="line-through select-none">Resume</span>
+        </li>
+        <li>
+          <Link href="https://www.upwork.com/freelancers/~016e92d973c579f18b"><a>Upwork</a></Link>
+        </li>
       </ul>
 
       <div className="hidden md:block col-span-3">
