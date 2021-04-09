@@ -25,7 +25,7 @@ export const projects = [
     description: "An app for discovering new movies and saving them in favourites and tracking latest top rated movies, built using Angular",
     stack: ["Angular", "GraphQL", "Bootstrap", "NodeJS", "ExpressJS", "MongoDB", "Firebase"],
     website: "https://moviex-1.web.app",
-    repo: "https://github.com/mario130/moviex",
+    // repo: "https://github.com/mario130/moviex",
     summary: "TEAM PROJECT - My role was purely logical in building the Graphql backend for retreiving the movies list and making the sidebar functional for filtering movies according to genres",
     imageUrl: "https://i.imgur.com/23f5DgA.png"
   },
