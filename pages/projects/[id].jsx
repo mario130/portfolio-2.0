@@ -70,7 +70,7 @@ export default function Post({res}) {
           ? <a href={res.project.repo} target="_blank" className="underline">Code</a>
           : null}
           <br/>
-          <a href={res.project.website} target="_blank" className="underline">Live version</a>
+          <a href={res.project.website} target="_blank" className="underline">Website</a>
         </div>
       </div>
     </>
